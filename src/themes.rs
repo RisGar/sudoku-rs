@@ -39,7 +39,22 @@ pub const DRACULA: Theme = Theme {
     victory_color: Color::Rgb(80, 250, 123),
 };
 
-#[cfg(not(feature = "dracula"))]
+#[allow(dead_code)]
+pub const ONEDARK: Theme = Theme {
+    title_color: Color::Rgb(98, 174, 238),
+    dark_square_color: Color::Rgb(33, 37, 43),
+    light_square_color: Color::Rgb(40, 44, 52),
+    highlighted_color: Color::Rgb(229, 192, 123),
+    error_color: Color::Rgb(224, 106, 116),
+    text_color: Color::Rgb(171, 178, 191),
+    light_number_color: Color::Rgb(171, 178, 191),
+    dark_number_color: Color::Rgb(171, 178, 191),
+    victory_color: Color::Rgb(151, 194, 121),
+};
+
+#[cfg(feature = "tranquil")]
 pub const BOARD_THEME: Theme = TRANQUIL;
 #[cfg(feature = "dracula")]
 pub const BOARD_THEME: Theme = DRACULA;
+#[cfg(feature = "onedark")]
+pub const BOARD_THEME: Theme = ONEDARK;
