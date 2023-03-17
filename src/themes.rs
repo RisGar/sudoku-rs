@@ -41,10 +41,10 @@ pub const DRACULA: Theme = Theme {
 
 #[allow(dead_code)]
 pub const ONEDARK: Theme = Theme {
-    title_color: Color::Rgb(98, 174, 238),
+    title_color: Color::Rgb(198, 120, 221),
     dark_square_color: Color::Rgb(33, 37, 43),
     light_square_color: Color::Rgb(40, 44, 52),
-    highlighted_color: Color::Rgb(229, 192, 123),
+    highlighted_color: Color::Rgb(98, 174, 238),
     error_color: Color::Rgb(224, 106, 116),
     text_color: Color::Rgb(171, 178, 191),
     light_number_color: Color::Rgb(171, 178, 191),
